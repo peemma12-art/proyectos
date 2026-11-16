@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delitopia Reposteria - Contactanos">
+    <title>Contacto - Delitopia Reposteria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-principal">
+        <div class="header-contenido">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/logo-delitopia.png" alt="Delitopia Logo" class="logo-imagen">
+                    <div class="logo-textos">
+                        <span class="logo-texto">Delitopia</span>
+                        <span class="logo-subtexto">Reposteria</span>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="navegacion" id="navegacion">
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-link">Inicio</a></li>
+                    <li><a href="productos.html" class="menu-link">Productos</a></li>
+                    <li><a href="ofertas.html" class="menu-link">Ofertas</a></li>
+                    <li><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="menu-link activo">Contacto</a></li>
+                    <li><a href="resenas.html" class="menu-link">Reseñas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-iconos">
+                <a href="carrito.html" class="icono-btn carrito-icono" aria-label="Ver carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrito-cantidad" id="carrito-cantidad">0</span>
+                </a>
+                
+                <div class="usuario-menu" id="usuario-menu" style="display: none;">
+                    <button class="icono-btn" id="btn-usuario" aria-label="Menu de usuario">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <div class="usuario-dropdown" id="usuario-dropdown">
+                        <span class="usuario-nombre" id="usuario-nombre">Hola, Usuario</span>
+                        <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesion</button>
+                    </div>
+                </div>
+                
+                <a href="login.html" class="icono-btn" id="btn-login" aria-label="Iniciar sesion">
+                    <i class="fas fa-user"></i>
+                </a>
+                
+                <button class="menu-hamburguesa" id="menu-hamburguesa" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+         <!--Borde decorativo ondulado-->
+        <div class="header-borde-decorativo">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+       <!--         <path d="M0,40 Q30,0 60,40 T120,40 T180,40 T240,40 T300,40 T360,40 T420,40 T480,40 T540,40 T600,40 T660,40 T720,40 T780,40 T840,40 T900,40 T960,40 T1020,40 T1080,40 T1140,40 T1200,40 V0 H0 Z" fill="b"/>   -->
+                    <path d="M0,0 V20 Q15,40 30,20 T60,20 T90,20 T120,20 T150,20 T180,20 T210,20 T240,20 T270,20 T300,20 T330,20 T360,20 T390,20 T420,20 T450,20 T480,20 T510,20 T540,20 T570,20 T600,20 T630,20 T660,20 T690,20 T720,20 T750,20 T780,20 T810,20 T840,20 T870,20 T900,20 T930,20 T960,20 T990,20 T1020,20 T1050,20 T1080,20 T1110,20 T1140,20 T1170,20 T1200,20 V0 Z" fill="#F29EB0"/>
+            </svg>
+        </div>
+    </header>
+    
+    <main class="contenido-principal">
+        <!-- Banner -->
+        <section class="banner-principal" style="padding: 40px 20px;">
+            <div class="banner-contenido">
+                <h1 class="banner-titulo">Contactanos</h1>
+                <p class="banner-subtitulo">Estamos aqui para ayudarte</p>
+            </div>
+        </section>
+
+        <!-- Separador -->
+        <div class="separador-decorativo">
+            <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                <path d="M0,30 V18 Q25,0 50,18 T100,18 T150,18 T200,18 T250,18 T300,18 T350,18 T400,18 T450,18 T500,18 T550,18 T600,18 T650,18 T700,18 T750,18 T800,18 T850,18 T900,18 T950,18 T1000,18 T1050,18 T1100,18 T1150,18 T1200,18 V30 Z" fill="#F9F4F1"/>
+            </svg>
+        </div>
+
+        <!-- Contacto -->
+        <section class="seccion">
+            <h2 class="seccion-titulo">Ponte en Contacto</h2>
+            <p class="seccion-subtitulo">Responderemos lo mas pronto posible</p>
+            
+            <div class="contacto-grid contenedor">
+                <!-- Info -->
+                <div class="contacto-info">
+                    <h3 style="color: #513724; margin-bottom: 25px; font-size: 1.3rem;">Informacion de Contacto</h3>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icono">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contacto-detalle">
+                            <h4>Direccion</h4>
+                            <p>Calle Principal #123<br>Ciudad, Colombia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icono">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contacto-detalle">
+                            <h4>Telefono</h4>
+                            <p>+57 301 777 7396</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icono">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contacto-detalle">
+                            <h4>WhatsApp</h4>
+                            <p>+57 301 777 7396</p>
+                            <a href="https://wa.me/573017777396" target="_blank" class="btn btn-primario btn-pequeno" style="margin-top: 10px;">
+                                <i class="fab fa-whatsapp"></i> Escribir
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icono">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contacto-detalle">
+                            <h4>Correo Electronico</h4>
+                            <p>delitopiareposteria@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icono">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contacto-detalle">
+                            <h4>Horario de Atencion</h4>
+                            <p>Lunes a Viernes: 9:00 AM - 7:00 PM<br>
+                               Sabados: 10:00 AM - 6:00 PM<br>
+                               Domingos: 10:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4 style="color: #513724; margin-bottom: 15px;">Siguenos</h4>
+                        <div class="footer-redes">
+                            <a href="https://www.instagram.com/delitopia_reposteria/" class="red-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="red-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://wa.me/573017777396" class="red-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario -->
+                <div class="contacto-formulario">
+                    <h3 style="color: #513724; margin-bottom: 25px; font-size: 1.3rem;">Envianos un Mensaje</h3>
+                    
+                    <div id="contacto-mensaje"></div>
+                    
+                    <form id="form-contacto">
+                        <div class="form-grupo">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="correo" class="form-label">Correo Electronico</label>
+                            <input type="email" id="correo" name="correo" class="form-control" placeholder="tu@correo.com" required>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Motivo de tu mensaje" required>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Escribe tu mensaje aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primario" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer-borde-decorativo">
+        <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+            <path d="M0,30 V18 Q25,0 50,18 T100,18 T150,18 T200,18 T250,18 T300,18 T350,18 T400,18 T450,18 T500,18 T550,18 T600,18 T650,18 T700,18 T750,18 T800,18 T850,18 T900,18 T950,18 T1000,18 T1050,18 T1100,18 T1150,18 T1200,18 V30 Z" fill="#F29EB0"/>
+        </svg>
+    </div>
+    
+    <footer class="footer-principal">
+        <div class="footer-contenido">
+            <div class="footer-columna">
+                <div class="footer-logo">
+                    <img src="img/logo/logo-delitopia.png" alt="Delitopia Logo" class="logo-imagen">
+                    <div class="logo-textos">
+                        <span class="logo-texto">Delitopia</span>
+                        <span class="logo-subtexto">Reposteria</span>
+                    </div>
+                </div>
+                <p class="footer-descripcion">Endulzamos tus momentos especiales con los mejores postres artesanales hechos con amor.</p>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/delitopia_reposteria/" class="red-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="red-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/573017777396" class="red-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-columna">
+                <h4 class="footer-titulo">Enlaces</h4>
+                <ul class="footer-enlaces">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-columna">
+                <h4 class="footer-titulo">Horarios</h4>
+                <ul class="footer-horarios">
+                    <li><i class="fas fa-clock"></i> Lun - Vie: 9:00 AM - 7:00 PM</li>
+                    <li><i class="fas fa-clock"></i> Sabados: 10:00 AM - 6:00 PM</li>
+                    <li><i class="fas fa-clock"></i> Domingos: 10:00 AM - 3:00 PM</li>
+                </ul>
+            </div>
+            
+            <div class="footer-columna">
+                <h4 class="footer-titulo">Contacto</h4>
+                <ul class="footer-contacto">
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Principal #123</li>
+                    <li><i class="fas fa-phone"></i> +57 301 777 7396</li>
+                    <li><i class="fas fa-envelope"></i> delitopiareposteria@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-inferior">
+            <p>&copy; 2024 Delitopia Reposteria. Todos los derechos reservados.</p>
+            <p>Hecho con ❤️ para endulzar tu vida</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
